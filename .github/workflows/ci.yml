@@ -9,8 +9,8 @@ on:
 
 jobs:
   desktop:
-    name: Test Desktop
-    runs-on: [self-hosted, linux, x64]
+    name: Test ktfmtprecommithook
+    runs-on: [ubuntu-latest]
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
