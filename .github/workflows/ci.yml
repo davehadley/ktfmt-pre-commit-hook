@@ -1,0 +1,31 @@
+name: ci
+
+on:
+ push:
+   branches: [ develop, main ]
+ pull_request:
+   branches: [ develop, main ]
+
+
+jobs:
+  desktop:
+    name: Test Desktop
+    runs-on: [self-hosted, linux, x64]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - name: Set up JDK 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+          distribution: 'adopt'
+      - name: Install Python Poetry
+        run: |
+          python3 -m pip install poetry
+      - name: Run pytest tests
+        run: |
+          poetry install && poetry run pytest tests
+      - name: Run pre-commit hooks
+        run: |
+          poetry run pre-commit install \
+          && poetry run pre-commit run --all
