@@ -79,7 +79,7 @@ repos:
 - repo: {path_to_repo.resolve()}
   rev: {commithash}
   hooks:
-  - id: ktfmt-pre-commit-hook
+  - id: ktfmt
 """
 
 
