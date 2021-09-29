@@ -6,7 +6,7 @@
 [![Last commit](https://img.shields.io/github/last-commit/davehadley/ktfmt-pre-commit-hook/develop)](https://github.com/davehadley/ktfmt-pre-commit-hook)
 [![Last release](https://img.shields.io/github/release-date/davehadley/ktfmt-pre-commit-hook)](https://github.com/davehadley/ktfmt-pre-commit-hook)
 
-A pre-commit hook to run [ktfmt](https://github.com/facebookincubator/ktfmt).
+A [pre-commit](https://pre-commit.com/) hook to run [ktfmt](https://github.com/facebookincubator/ktfmt).
 
 ## Requirements
 
