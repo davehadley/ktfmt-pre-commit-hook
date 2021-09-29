@@ -13,20 +13,18 @@ repos:
   hooks:
   - id: black
     stages: [commit]
-    exclude: ^.*/templates/.*$
 
 - repo:  https://gitlab.com/pycqa/flake8
   rev: 3.9.2
   hooks:
     - id: flake8
       stages: [commit]
-      exclude: ^.*/templates/.*$
 
 - repo: https://github.com/pre-commit/mirrors-mypy
   rev: v0.910
   hooks:
     - id: mypy
-      exclude: ^.*/templates/.*$
+      args: [--ignore-missing-imports]
 
 - repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v4.0.1

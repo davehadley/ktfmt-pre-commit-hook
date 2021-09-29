@@ -5,6 +5,8 @@ from pathlib import Path
 from subprocess import run
 from typing import Iterable, Optional
 
+from filelock import FileLock  # type: ignore
+
 DEFAULT_KTFMT_VERSION = "0.28"
 
 
@@ -26,11 +28,12 @@ def ktfmtprecommithook(
 def _get_ktfmt(version: str) -> Path:
     try:
         dst = _cache_directory() / f"ktfmt-{version}-jar-with-dependencies.jar"
-        if not dst.exists():
-            url = f"https://search.maven.org/remotecontent?filepath=com/facebook/ktfmt/{version}/ktfmt-{version}-jar-with-dependencies.jar"
-            tempfilename, _ = urllib.request.urlretrieve(url=url)
-            shutil.move(tempfilename, dst)
-        assert dst.exists()
+        with FileLock(str(dst.resolve()) + ".lock"):
+            if not dst.exists():
+                url = f"https://search.maven.org/remotecontent?filepath=com/facebook/ktfmt/{version}/ktfmt-{version}-jar-with-dependencies.jar"
+                tempfilename, _ = urllib.request.urlretrieve(url=url)
+                shutil.move(tempfilename, dst)
+            assert dst.exists()
     except Exception as ex:
         raise Exception(f"failed to find ktfmt version {version}") from ex
     return dst
