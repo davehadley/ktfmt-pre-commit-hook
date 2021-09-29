@@ -8,6 +8,12 @@
 
 A pre-commit hook to run [ktfmt](https://github.com/facebookincubator/ktfmt).
 
+## Requirements
+
+This commit hook requires Python `>=3.8`.
+
+`ktfmt` requires Java 11. The `java` in your `PATH` must be version `>=11`.
+
 ## Usage Instructions
 
 Add the following lines to your `.pre-commit-config.yaml`.
@@ -34,8 +40,6 @@ All other `args` provided will be passed onto `ktfmt`. For example:
 
 See the [ktfmt documentation](https://facebookincubator.github.io/ktfmt/) for supported command line arguments.
 
-`ktfmt` requires Java 11. The `java` in your `PATH` must be version `>=11`.
-
 Please report any bugs in the [issue tracker](https://github.com/davehadley/ktfmt-pre-commit-hook/issues).
 
 ## Development Instructions
@@ -55,7 +59,7 @@ poetry install
 poetry run pytest tests
 ```
 
-### License
+## License
 
 Licensed under either of
 
