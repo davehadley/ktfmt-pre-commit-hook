@@ -2,7 +2,7 @@
 name = "ktfmt-pre-commit-hook"
 version = "0.1.0"
 description = "A pre-commit hook to run ktfmt."
-license = "MIT"
+license = "MIT OR Apache-2.0"
 authors = ["David Hadley <davehadley@users.noreply.github.com>"]
 packages = [ { include = "ktfmtprecommithook", from = "src" } ]
 readme = "README.md"
