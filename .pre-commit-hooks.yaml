@@ -1,0 +1,7 @@
+-   id: ktfmt
+    name: ktfmt
+    description: Runs ktfmt (https://github.com/facebookincubator/ktfmt) on Kotlin source files.
+    entry: ktfmt-pre-commit-hook
+    language: python
+    types: [kotlin]
+    minimum_pre_commit_version: '2.15'
