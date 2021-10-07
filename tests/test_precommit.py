@@ -15,7 +15,7 @@ from ktfmtprecommithook import ktfmtprecommithook
         ["--dropbox-style"],
         ["--google-style"],
         ["--kotlinlang-style"],
-        ["--version=0.27"],
+        ["--version=0.28"],
     ],
 )
 def test_ktfmtprecommithook(extra_args: List[str]):
