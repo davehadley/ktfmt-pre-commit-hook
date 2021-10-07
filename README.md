@@ -6,7 +6,7 @@
 [![Last commit](https://img.shields.io/github/last-commit/davehadley/ktfmt-pre-commit-hook/develop)](https://github.com/davehadley/ktfmt-pre-commit-hook)
 [![Last release](https://img.shields.io/github/release-date/davehadley/ktfmt-pre-commit-hook)](https://github.com/davehadley/ktfmt-pre-commit-hook)
 
-A pre-commit hook to run [ktfmt](https://github.com/facebookincubator/ktfmt).
+A [pre-commit](https://pre-commit.com/) hook to run [ktfmt](https://github.com/facebookincubator/ktfmt).
 
 ## Requirements
 
@@ -20,7 +20,7 @@ Add the following lines to your `.pre-commit-config.yaml`.
 
 ```yaml
 - repo: https://github.com/davehadley/ktfmt-pre-commit-hook
-  rev: 0.1.0
+  rev: 0.2.0
   hooks:
   - id: ktfmt
     stages: [commit]
@@ -31,10 +31,10 @@ All other `args` provided will be passed onto `ktfmt`. For example:
 
 ```yaml
 - repo: https://github.com/davehadley/ktfmt-pre-commit-hook
-  rev: 0.1.0
+  rev: 0.2.0
   hooks:
   - id: ktfmt
-    args: [--version=0.28, --dropbox-style]
+    args: [--version=0.29, --dropbox-style]
     stages: [commit]
 ```
 

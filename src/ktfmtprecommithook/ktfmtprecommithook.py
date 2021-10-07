@@ -7,7 +7,7 @@ from typing import Iterable, Optional
 
 from filelock import FileLock  # type: ignore
 
-DEFAULT_KTFMT_VERSION = "0.28"
+DEFAULT_KTFMT_VERSION = "0.29"
 
 
 def ktfmtprecommithook(
