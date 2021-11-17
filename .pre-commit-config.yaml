@@ -37,3 +37,4 @@ repos:
       exclude: ^.*/templates/.*$
     - id: mixed-line-ending
       stages: [commit]
+    - id: check-yaml
