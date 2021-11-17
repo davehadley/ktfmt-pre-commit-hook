@@ -20,7 +20,7 @@ Add the following lines to your `.pre-commit-config.yaml`.
 
 ```yaml
 - repo: https://github.com/davehadley/ktfmt-pre-commit-hook
-  rev: 0.2.0
+  rev: 0.3.0
   hooks:
   - id: ktfmt
     stages: [commit]
