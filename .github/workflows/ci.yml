@@ -1,10 +1,13 @@
 name: ci
 
 on:
- push:
-   branches: [ develop, main ]
- pull_request:
-   branches: [ develop, main ]
+  push:
+    branches: [ develop, main ]
+  pull_request:
+    branches: [ develop, main ]
+  schedule:
+  # run once per week in case of change of ktfmt URL
+  - cron: '41 4 * * 0'
 
 
 jobs:
