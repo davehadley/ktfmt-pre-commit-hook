@@ -20,7 +20,7 @@ Add the following lines to your `.pre-commit-config.yaml`.
 
 ```yaml
 - repo: https://github.com/davehadley/ktfmt-pre-commit-hook
-  rev: 0.3.0
+  rev: 0.4.0
   hooks:
   - id: ktfmt
     stages: [commit]
@@ -31,10 +31,10 @@ All other `args` provided will be passed onto `ktfmt`. For example:
 
 ```yaml
 - repo: https://github.com/davehadley/ktfmt-pre-commit-hook
-  rev: 0.2.0
+  rev: 0.4.0
   hooks:
   - id: ktfmt
-    args: [--version=0.30, --dropbox-style]
+    args: [--version=0.31, --dropbox-style]
     stages: [commit]
 ```
 
