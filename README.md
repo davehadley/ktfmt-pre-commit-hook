@@ -34,7 +34,7 @@ All other `args` provided will be passed onto `ktfmt`. For example:
   rev: 0.7.0
   hooks:
   - id: ktfmt
-    args: [--version=0.37, --dropbox-style]
+    args: [--version=0.39, --dropbox-style]
     stages: [commit]
 ```
 
