@@ -8,6 +8,7 @@ on:
   schedule:
   # run once per week in case of change of ktfmt URL
   - cron: '41 4 * * 0'
+  workflow_dispatch:
 
 
 jobs:
@@ -31,4 +32,4 @@ jobs:
       - name: Run pre-commit hooks
         run: |
           poetry run pre-commit install \
-          && poetry run pre-commit run --all
+          && poetry run pre-commit run --all-files
