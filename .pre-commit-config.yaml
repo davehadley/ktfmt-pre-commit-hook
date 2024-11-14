@@ -3,7 +3,7 @@ default_stages: [commit]
 repos:
 
 - repo: https://github.com/timothycrosley/isort
-  rev: 5.10.1
+  rev: 5.13.2
   hooks:
     - id: isort
       stages: [ commit ]
@@ -27,7 +27,7 @@ repos:
       args: [--ignore-missing-imports]
 
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.2.0
+  rev: v4.6.0
   hooks:
     - id: check-added-large-files
     - id: check-ast
