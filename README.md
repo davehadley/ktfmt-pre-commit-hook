@@ -1,7 +1,7 @@
 # ktfmt-pre-commit-hook
 
-[![Main Build status](https://img.shields.io/github/workflow/status/davehadley/ktfmt-pre-commit-hook/ci/main?label=main)](https://github.com/davehadley/ktfmt-pre-commit-hook)
-[![Develop status](https://img.shields.io/github/workflow/status/davehadley/ktfmt-pre-commit-hook/ci/develop?label=develop)](https://github.com/davehadley/ktfmt-pre-commit-hook)
+[![Main Build status](https://img.shields.io/github/actions/workflow/status/davehadley/ktfmt-pre-commit-hook/ci.yml?branch=main&label=main)](https://github.com/davehadley/ktfmt-pre-commit-hook)
+[![Develop status](https://img.shields.io/github/actions/workflow/status/davehadley/ktfmt-pre-commit-hook/ci.yml?branch=develop&label=develop)](https://github.com/davehadley/ktfmt-pre-commit-hook)
 [![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue)](https://github.com/davehadley/ktfmt-pre-commit-hook)
 [![Last commit](https://img.shields.io/github/last-commit/davehadley/ktfmt-pre-commit-hook/develop)](https://github.com/davehadley/ktfmt-pre-commit-hook)
 [![Last release](https://img.shields.io/github/release-date/davehadley/ktfmt-pre-commit-hook)](https://github.com/davehadley/ktfmt-pre-commit-hook)
