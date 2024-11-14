@@ -1,7 +1,7 @@
 # ktfmt-pre-commit-hook
 
-[![Main Build status](https://img.shields.io/github/workflow/status/davehadley/ktfmt-pre-commit-hook/ci/main?label=main)](https://github.com/davehadley/ktfmt-pre-commit-hook)
-[![Develop status](https://img.shields.io/github/workflow/status/davehadley/ktfmt-pre-commit-hook/ci/develop?label=develop)](https://github.com/davehadley/ktfmt-pre-commit-hook)
+[![Main Build status](https://img.shields.io/github/actions/workflow/status/davehadley/ktfmt-pre-commit-hook/ci.yml?branch=main&label=main)](https://github.com/davehadley/ktfmt-pre-commit-hook)
+[![Develop status](https://img.shields.io/github/actions/workflow/status/davehadley/ktfmt-pre-commit-hook/ci.yml?branch=develop&label=develop)](https://github.com/davehadley/ktfmt-pre-commit-hook)
 [![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue)](https://github.com/davehadley/ktfmt-pre-commit-hook)
 [![Last commit](https://img.shields.io/github/last-commit/davehadley/ktfmt-pre-commit-hook/develop)](https://github.com/davehadley/ktfmt-pre-commit-hook)
 [![Last release](https://img.shields.io/github/release-date/davehadley/ktfmt-pre-commit-hook)](https://github.com/davehadley/ktfmt-pre-commit-hook)
@@ -20,7 +20,7 @@ Add the following lines to your `.pre-commit-config.yaml`.
 
 ```yaml
 - repo: https://github.com/davehadley/ktfmt-pre-commit-hook
-  rev: 0.7.0
+  rev: 0.8.0
   hooks:
   - id: ktfmt
     stages: [commit]
@@ -31,10 +31,10 @@ All other `args` provided will be passed onto `ktfmt`. For example:
 
 ```yaml
 - repo: https://github.com/davehadley/ktfmt-pre-commit-hook
-  rev: 0.7.0
+  rev: 0.8.0
   hooks:
   - id: ktfmt
-    args: [--version=0.39, --dropbox-style]
+    args: [--version=0.53, --dropbox-style]
     stages: [commit]
 ```
 
