@@ -1,3 +1,44 @@
+# ktfmt-pre-commit-hook (Archived)
+
+> **This repository is deprecated and archived.**
+>
+> Please use:
+>
+> **https://github.com/macisamuele/language-formatters-pre-commit-hooks**
+>
+> which now includes support for `ktfmt`.
+
+## Why?
+
+This repository originally provided a dedicated pre-commit hook for
+https://github.com/facebook/ktfmt.
+
+Since `ktfmt` support is now available in
+[`language-formatters-pre-commit-hooks`](https://github.com/macisamuele/language-formatters-pre-commit-hooks),
+maintaining a separate repository no longer provides value.
+
+## Migration
+
+Replace:
+
+```yaml
+- repo: https://github.com/davehadley/ktfmt-pre-commit-hook
+  rev: <version>
+  hooks:
+  - id: ktfmt
+```
+
+with:
+
+```yaml
+- repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
+  rev: <version>
+  hooks:
+    - id: pretty-format-kotlin
+      entry: mise exec -- pretty-format-kotlin
+      args: [--ktfmt, --autofix]
+```
+
 # ktfmt-pre-commit-hook
 
 [![Main Build status](https://img.shields.io/github/actions/workflow/status/davehadley/ktfmt-pre-commit-hook/ci.yml?branch=main&label=main)](https://github.com/davehadley/ktfmt-pre-commit-hook)
